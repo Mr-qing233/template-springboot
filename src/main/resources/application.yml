@@ -1,0 +1,19 @@
+server:
+  port: 9010
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/wechat?serverTimezone=GMT%2B8&characterEncoding=UTF-8&allowMultiQueries=true
+    username: root
+    password: root
+  jackson:
+    date-format: yyyy-MM-dd HH:mm:ss
+    time-zone: GMT+8
+  servlet:
+    multipart:
+      max-file-size: 200MB
+      max-request-size: 500MB
+      enabled: true
+file:
+  #  上传文件存储地址[服务端地址]
+  localPath: D:\Work\Data
